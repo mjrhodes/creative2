@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: #001E2F;
+    color: White;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+a:link {
+    color: #7C4400;
+}
+
+a:visited {
+    color: #7C4400;
+}
+
+.picOfTheDay {
+    margin-top: 50px;
+}
+
+.pic {
+    height: 600px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #00354F;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.nav li a.active {
+    background-color: #005887;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #001E2F;
+}
+
+.container {
+    margin-left: 25%;
+    padding:16px;
+}
+
+.footer {
+    margin-left: 20%;
+    background-color: #00354F;
+    padding: 5px 10px;
+}
+
+.card {
+    width: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.solarSystem {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-right: 50px;
+}
+
+.solarSystem img {
+    width: 100%;
+}
+
+.home {
+    height: 430px;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 300px;
+}
+
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* To give the same size to all text fields */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+}
+
+.button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+    margin-left: .5em;
+}
