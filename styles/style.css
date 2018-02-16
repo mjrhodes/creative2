@@ -26,8 +26,8 @@ a:visited {
     margin-top: 50px;
 }
 
-.pic {
-    height: 600px;
+.picOfTheDay img {
+    width: 100%;
 }
 
 .nav {
@@ -73,6 +73,10 @@ a:visited {
     width: 200px;
 }
 
+.card img {
+    height: 200px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -92,10 +96,6 @@ a:visited {
 
 .solarSystem img {
     width: 100%;
-}
-
-.home {
-    height: 430px;
 }
 
 form {

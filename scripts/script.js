@@ -4,6 +4,9 @@ var loadPic = function() {
 	dataType : "json",
 	success : function(json) {
 	    $("#nasaPic").attr("src", json.url);
+	    $("#nasaHDPic").attr("href", json.hdurl);
+	    $("#nasaTitle").text(json.title);
+	    $("#nasaExplanation").text(json.explanation);	    
 	}
     });
 };
@@ -19,8 +22,10 @@ $(document).ready(function() {
 	    url : myurl,
 	    dataType : "json",
 	    success : function(json) {
-		console.log(json.url);
 		$("#nasaPic").attr("src", json.url);
+		$("#nasaHDPic").attr("href", json.hdurl);		
+		$("#nasaTitle").text(json.title);
+		$("#nasaExplanation").text(json.explanation);
 	    }
 	});
     });
